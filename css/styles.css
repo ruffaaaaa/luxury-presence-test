@@ -1,0 +1,474 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FFF5F2;
+}
+
+nav {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #FFF5F2;
+}
+
+.navbar-container {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+}
+
+.logo img {
+    height: 50px;
+}
+
+ul {
+    display: flex;
+    gap: 3rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    transition: color 0.3s;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    color: white;
+}
+
+.burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.burger span {
+    width: 25px;
+    height: 3px;
+    background: black;
+    transition: 0.3s;
+}
+
+
+.hero {
+    position: relative;
+    height: 500px;
+    background: url('/assets/images/home1.png') no-repeat center center/cover;
+    border-radius: 20px;
+    max-width: 1300px;
+    margin: 80px auto 0 auto;
+    overflow: hidden;
+}
+
+.hero-image {
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    width: 500px;
+    height: auto;
+    z-index: 1;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    z-index: 2;
+    padding: 20px;
+}
+
+.hero-content h4 {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-bottom: -65px;
+    top: 20;
+    font-family: "Cinzel", serif;
+
+}
+
+.hero-content h1 {
+    font-size: 80px;
+    margin-bottom: -10px;
+    font-family: "Cinzel", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+.hero-content p {
+    text-align: center;
+}
+
+.hero-content .hero-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: white;
+    color: black;
+    font-weight: bold;
+    border-radius: 25px;
+    text-decoration: none;
+    margin-bottom: -0px;
+}
+
+.hero-content p {
+    margin-top: -5px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+
+.bg-section {
+    margin-top: -150px;
+    background-color: #FFDE4D;
+    height: 260px;
+}
+
+.subtitle2 {
+    margin-top: -100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Cinzel", serif;
+    font-weight: bold;
+
+}
+
+.getitsold {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 30px auto;
+    max-width: 1300px;
+    width: 100%;
+}
+
+
+.getitsold .item {
+    overflow: hidden;
+    border: #555;
+    text-align: center;
+    padding: 40px;
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-top: none;
+    border-bottom: none;
+}
+
+.getitsold img {
+    width: 100%;
+    height: auto;
+}
+
+.getitsold h3 {
+    font-size: 1rem;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.getitsold p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+
+.find-your-dream-home {
+    background: linear-gradient(135deg, #FFDE4D, #CAA400);
+    padding: 30px 15px;
+
+}
+
+.find-title {
+    margin-top: -30px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Cinzel", serif;
+    font-weight: bold;
+}
+
+
+.find-form {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 50px;
+    border-radius: 20px;
+
+}
+
+.find-form form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.find-form input,
+.find-form select {
+    padding: 12px;
+    border: none;
+    background: #e0e0e0;
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+.price-range {
+    display: grid;
+    grid-template-columns: .5fr .5fr;
+    gap: 10px;
+}
+
+.form-btn {
+    grid-column: 1 / -1;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.form-btn button {
+    background: #f3e5ab;
+    color: black;
+    font-weight: bold;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form-btn button:hover {
+    background: #f0d98c;
+}
+
+
+.realty-images {
+    padding: 20px 0;
+    overflow: hidden;
+}
+
+.scroll-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.scroll-content {
+    display: flex;
+    animation: scroll 20s linear infinite;
+    gap: 15rem;
+}
+
+.scroll-content img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-right: 2rem;
+    border-radius: 10px;
+}
+
+
+.services-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+    font-family: "Cinzel", serif;
+    font-weight: bold;
+
+}
+
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: auto;
+    max-width: 1300px;
+    width: 100%;
+}
+
+
+.services .item {
+    overflow: hidden;
+    border: #555;
+    text-align: center;
+    padding: 40px;
+    border-top: none;
+    border-bottom: none;
+}
+
+.services img {
+    width: 100%;
+    height: auto;
+}
+
+.services h3 {
+    font-size: 1.3rem;
+    margin: 20px 0;
+    text-transform: uppercase;
+}
+
+.services p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+
+.footer {
+    background: #edc937;
+    color: #000;
+    text-align: center;
+    padding: 15px 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        font-size: 12px;
+    }
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+
+@media (max-width: 480px) {
+    .getitsold {
+        grid-template-columns: 1fr;
+    }
+
+    .find-form button {
+        grid-column: span 1;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    .getitsold {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+@media (max-width: 768px) {
+    ul {
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: #edc937;
+        flex-direction: column;
+        width: 100%;
+        padding: 20px;
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ul.active {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .hero-image {
+        position: absolute;
+        bottom: 0;
+        right: 0px;
+        width: 280px;
+        height: auto;
+        z-index: 1;
+    }
+
+    .hero-content {
+        width: 100%;
+        left: 45%;
+        margin: 20px;
+        top: 25%;
+    }
+
+    .hero-content .hero-btn {
+        display: inline-block;
+        padding: 10px 30px;
+        background: white;
+        color: black;
+        font-weight: bold;
+        border-radius: 25px;
+        text-decoration: none;
+        font-size: 12px;
+        margin: 5px;
+    }
+
+    .hero-content h4 {
+        font-size: 11px;
+        letter-spacing: 1px;
+        margin: 10px;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+        margin: 5px;
+    }
+
+    .hero-content p {
+        font-size: 9px;
+    }
+
+    .getitsold {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .find-form {
+        padding: 40px;
+    }
+
+    .find-form form {
+        grid-template-columns: 1fr;
+    }
+
+    .price-range {
+        grid-template-columns: 1fr;
+    }
+
+    .form-btn {
+        margin-top: 10px;
+    }
+
+    .find-title {
+        font-size: 24px;
+        margin-top: -20px;
+    }
+
+    .services {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+}
